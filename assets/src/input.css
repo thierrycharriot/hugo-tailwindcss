@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+p {
+    @apply py-3;
+}
+
+.bibi-elevator {
+    @apply block text-center w-36 py-1 bg-stone-300 border border-stone-600 rounded-md  hover:bg-stone-600 hover:text-white fixed right-3 bottom-12 z-50 hover:transition hover:duration-600 hover:underline;     
+}

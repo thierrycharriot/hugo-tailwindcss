@@ -1,0 +1,15 @@
+<!-- Navbar -->
+<nav class="bg-stone-300">
+    <!-- Flex container -->
+    <div class="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between">
+        <!-- Logo -->
+        <input type="checkbox" id="check" class="hidden">
+        <label class="hover:bg-stone-600 hover:text-stone-50 flex items-center justify-between px-3 hover:transition hover:duration-300" for="check"><a href="{{ .Site.BaseURL }}" class="text-3xl font-bold">{{ .Site.Title }}</a><span class="hamburger cursor-pointer">&#9776;</span></label>
+        <!-- Menu Items -->
+        <ul class="md:flex md:flex-row hidden" id="menu">            
+            {{ range .Site.Menus.main }}
+            <li class="my-1 md:my-0"><a href="{{ .URL }}" class="block p-3 hover:bg-stone-900 hover:text-stone-50 hover:transition hover:duration-300 hover:underline {{ if $.IsMenuCurrent "main" . }} bg-stone-600 text-white {{ end }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>

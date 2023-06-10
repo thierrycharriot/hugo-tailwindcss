@@ -1,0 +1,14 @@
+{
+  "name": "hugo-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "hugo server & tailwindcss -i ./assets/src/input.css -o ./assets/dist/output.css --watch",
+    "prod": "hugo & tailwindcss -i ./assets/src/input.css -o ./assets/dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,30 @@
+# Basic setup
+baseURL:        ''
+#baseURL:        'http://localhost/Public/public-taiwindcss/'
+languageCode:   'fr-FR'
+title:          'Hugo Tailwindcss'
+
+publishDir:     '/opt/lampp/htdocs/Public/public-tailwindcss'
+
+# Content Setup
+paginate:       2
+
+# Menu Setup
+menu:
+  main:
+  - name:     Accueil
+    pageRef:  /
+    weight:   10
+  - name:     Contact
+    pageRef:  /contact
+    weight:   30
+  - name:     Mentions légales
+    pageRef:  /mentions
+    weight:   40
+
+# Parameter settings
+params:
+  author:       'François Perrin'
+  description:  'Un site web généré avec Hugo'
+  email:        'francois@chez.lui'
+  github:       'https://github.com/bibibricodeur'
