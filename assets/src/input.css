@@ -13,6 +13,6 @@ p {
 
 html { scroll-behavior: smooth; }
 article section a { color: dodgerblue; text-decoration: underline; } article section a:hover { text-decoration: none; }
-img { margin: 1rem auto; width: 100%;}
+img { margin: 1rem auto; width: 100%; }
 
-section img { width: 960px; max-height: 300px; }
+section img { max-width: 98%; height: 300px; object-fit: cover; object-position: center; }

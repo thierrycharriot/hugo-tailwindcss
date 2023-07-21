@@ -1,10 +1,10 @@
 # Basic setup
-baseURL:        ''
-#baseURL:        'http://localhost/Public/public-taiwindcss/'
+#baseURL:        ''
+baseURL:        'http://localhost/Public/public-tailwindcss/'
 languageCode:   'fr-FR'
 title:          'Hugo Tailwindcss'
 
-#publishDir:     '/opt/lampp/htdocs/Public/public-tailwindcss'
+publishDir:     '/opt/lampp/htdocs/Public/public-tailwindcss'
 
 # Content Setup
 paginate:       2
