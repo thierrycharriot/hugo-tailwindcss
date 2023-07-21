@@ -24,8 +24,8 @@
         <li class="my-1 md:my-0">
             <a href="{{ .Page.Permalink }}"
                 class="block p-3 hover:bg-stone-600 hover:text-stone-50 hover:transition hover:duration-300 hover:underline {{ if eq $title .Page.Title }} bg-stone-600  text-white {{ end }}">{{
-                .Page.Title }}&ensp;&ensp;<span class="bg-stone-600 rounded-full px-1 text-white">{{ $count }}</span></a>
-        </li>
+                .Page.Title }} <span class="inline-flex items-center justify-center w-6 h-6 ml-3 text-xs font-semibold text-stone-900 bg-stone-300 rounded-full">{{ $count
+                }}</span></a>
         {{ end }}
         {{ end }}
     </ul>
@@ -39,8 +39,8 @@
         <li class="my-1 md:my-0">
             <a href="{{ .Page.Permalink }}"
                 class="block p-3 hover:bg-stone-600 hover:text-stone-50 hover:transition hover:duration-300 hover:underline  {{ if eq $title .Page.Title }} bg-stone-600 text-white {{ end }}">{{
-                .Page.Title }}&ensp;&ensp;<span class="bg-stone-600 rounded-full px-1 text-white">{{ $count }}</span></a>
-        </li>
+                .Page.Title }} <span class="inline-flex items-center justify-center w-6 h-6 ml-3 text-xs font-semibold text-stone-900 bg-stone-300 rounded-full">{{ $count
+                }}</span></a>
         {{ end }}
         {{ end }}
     </ul>
