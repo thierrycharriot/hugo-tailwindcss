@@ -7,7 +7,7 @@ categories: ["Network 003"]
 description: 'Description article 003'
 ---
 
-![Network picture](/images/background-003-unsplash.webp)
+![Network picture](background-003-unsplash.webp)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et convallis odio, eget sodales leo. Maecenas eget convallis nibh, in auctor velit. Ut sem sem, imperdiet nec ullamcorper et, scelerisque quis mauris. Fusce nunc ante, lobortis bibendum felis et, sodales pulvinar massa. Aenean sit amet pellentesque tortor. Fusce ut sollicitudin libero. Nullam eleifend tempus quam, vitae posuere elit sodales sit amet. Phasellus risus quam, placerat in viverra quis, venenatis accumsan augue. Duis ultrices sapien ligula, in tincidunt sapien facilisis ac. Donec id mauris in turpis accumsan ultrices pretium vel odio. Duis dignissim sagittis lectus a convallis.
 

@@ -4,9 +4,10 @@ date: 2019-12-21T15:03:15+03:00
 draft: false
 tags: ["Computer 001"]
 categories: ["Network 001"]
+description: 'Description article 001'
 ---
 
-![Network picture](/images/background-001-unsplash.webp)
+![Network picture](background-001-unsplash.webp)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et convallis odio, eget sodales leo. Maecenas eget convallis nibh, in auctor velit. Ut sem sem, imperdiet nec ullamcorper et, scelerisque quis mauris. Fusce nunc ante, lobortis bibendum felis et, sodales pulvinar massa. Aenean sit amet pellentesque tortor. Fusce ut sollicitudin libero. Nullam eleifend tempus quam, vitae posuere elit sodales sit amet. Phasellus risus quam, placerat in viverra quis, venenatis accumsan augue. Duis ultrices sapien ligula, in tincidunt sapien facilisis ac. Donec id mauris in turpis accumsan ultrices pretium vel odio. Duis dignissim sagittis lectus a convallis.
 

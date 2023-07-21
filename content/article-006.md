@@ -4,6 +4,7 @@ date: 2019-12-26T15:03:15+03:00
 draft: false
 tags: ["Computer 002"]
 categories: ["Network 003"]
+description: 'Description article 006'
 ---
 
 ![Network picture](background-006-unsplash.webp)

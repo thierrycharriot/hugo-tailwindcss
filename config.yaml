@@ -1,6 +1,6 @@
 # Basic setup
-#baseURL:        ''
-baseURL:        'http://localhost/Public/public-tailwindcss/'
+baseURL:        ''
+#baseURL:        'http://localhost/Public/public-tailwindcss/'
 languageCode:   'fr-FR'
 title:          'Hugo Tailwindcss'
 
