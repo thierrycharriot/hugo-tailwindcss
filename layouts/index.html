@@ -1,14 +1,15 @@
 {{ define "main" }}
 
-    <main class="container mx-auto flex justify-center items-center">
+<main class="container mx-auto flex flex-col md:flex-row">
 
-        <article class="m-3 p-3 border bg-stone-100 shadow">
+    <article class="m-3 p-3 border bg-stone-100 shadow md:basis-3/4">
 
-            {{ .Content }}
-            
-        </article>
+        {{ .Content }}
+        
+    </article>
+
+    {{- partial "aside.html" . -}}
 
     </main>
-
 
 {{ end }}

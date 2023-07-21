@@ -4,7 +4,7 @@ baseURL:        ''
 languageCode:   'fr-FR'
 title:          'Hugo Tailwindcss'
 
-publishDir:     '/opt/lampp/htdocs/Public/public-tailwindcss'
+#publishDir:     '/opt/lampp/htdocs/Public/public-tailwindcss'
 
 # Content Setup
 paginate:       2

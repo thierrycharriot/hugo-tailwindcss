@@ -1,29 +1,42 @@
-<footer class="bg-stone-100">
-    <div class="container mx-auto flex flex-col md:flex-row">
+<footer class="px-4 divide-y bg-gradient-to-r from-stone-500 to-stone-800 text-stone-50">
+    <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 
-        <div class="md:basis-1/2 md:py-6">
-            <strong class="block p-3 md:text-center text-2xl">Catégorie(s):</strong> 
-            <ul class="">
-                {{ range $taxonomy := .Site.Taxonomies.categories }}
-                <li class="my-1 md:my-0"><a class="block p-3 hover:bg-stone-400 hover:text-stone-50 hover:transition hover:duration-300 hover:underline md:w-2/4 mx-auto" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-                {{ end }} 
-            </ul>
+        <div class="lg:w-1/4">
+            <a rel="noopener noreferrer" href="{{ .Site.BaseURL }}"
+                class="flex justify-between space-x-3 lg:justify-start">
+                <span class="self-center text-2xl font-semibold">{{ site.Title }}</span>
+            </a>
         </div>
 
-        <div class="md:basis-1/2 md:py-6">
-            <strong class="block p-3 md:text-center text-2xl">Tag(s):</strong> 
-            <ul class="">
-                {{ range $taxonomy := .Site.Taxonomies.tags }}
-                <li class="my-1 md:my-0"><a class="block p-3 hover:bg-stone-400 hover:text-stone-50 hover:transition hover:duration-300 hover:underline md:w-2/4 mx-auto" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
-                {{ end }}
-            </ul>
+        <div class="flex-row space-y-3 text-sm gap-x-3 gap-y-8 w-3/4 lg:grid lg:grid-cols-3">
+            <div class="space-y-3 col-span-2">
+                <h3 class="uppercase text-stone-200">Citations</h3>
+                <ul class="space-y-1">
+                    {{ range .Site.Data.citations }}
+                    <li class="">{{ .citation }} <a rel="noopener noreferrer" class="underline hover:no-underline"
+                            href="{{ .url }}">{{ .name
+                            }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h3 class="uppercase text-stone-200">Quick link(s):</h3>
+                <ul class="space-y-1">
+                    {{ range .Site.Data.connect }}
+                    <li class=""><a rel="noopener noreferrer" class="underline hover:no-underline" href="{{ .url }}">{{
+                            .name
+                            }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
         </div>
-
     </div>
-    <div class="bg-stone-300 text-center text-stone-900 p-3">
-        <p>Carrossé par <a class="hover:underline font-bold" href="https://tailwindcss.com/">Tailwind CSS</a> & motorisé par <a class="hover:underline font-bold" href="https://gohugo.io/">Hugo</a></p>
+    <div class="py-6 text-sm text-center text-stone-200">
+        Carrossé par <a href="https://tailwindcss.com/" class="underline hover:no-underline">Tailwind CSS</a> & <a
+            href="https://thierrycharriot.github.io" class="underline hover:no-underline">Thierry Charriot</a>. Motorisé
+        par <a href="https://gohugo.io/" class="underline hover:no-underline">Hugo</a>
     </div>
 </footer>
 
-{{ $scripts := resources.Get "dist/scripts.js" }}
+{{ $scripts := resources.Get "js/scripts.js" }}
 <script src="{{- $scripts.Permalink | relURL -}}"></script>
