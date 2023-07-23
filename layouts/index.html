@@ -1,15 +1,20 @@
 {{ define "main" }}
 
-<main class="container mx-auto flex flex-col md:flex-row">
 
-    <article class="m-3 p-3 border bg-stone-100 shadow md:basis-3/4">
+<main class="flex flex-col md:flex-row bg-stone-300">
+
+    <article class="md:basis-3/4">
+
+        <div class="m-3 p-3 bg-stone-50 rounded shadow-lg">
 
         {{ .Content }}
-        
+
+        </div>
+
     </article>
 
     {{- partial "aside.html" . -}}
 
-    </main>
+</main>
 
 {{ end }}

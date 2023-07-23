@@ -2,17 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 p {
     @apply py-3;
 }
 
 .bibi-elevator {
-    @apply bg-stone-600 hover:bg-stone-900 text-stone-50 font-bold py-3 px-3 border border-stone-900 rounded fixed right-3 bottom-12 z-50 hover:transition hover:duration-300;
+    @apply bg-stone-700 hover:bg-stone-900 text-white font-bold py-3 px-3 border border-stone-900 rounded fixed right-3 bottom-12 z-50 hover:transition hover:duration-300;
+}
+section img {
+    @apply rounded-lg shadow-lg;
 }
 
 html { scroll-behavior: smooth; }
 article section a { color: dodgerblue; text-decoration: underline; } article section a:hover { text-decoration: none; }
+code { margin: 0.6rem 0; color: brown; white-space: pre-line; }
 img { margin: 1rem auto; width: 100%; }
 
-section img { max-width: 98%; max-height: 300px; object-fit: cover; object-position: center; }
+section img { max-width: 100%; max-height: 300px; object-fit: cover; object-position: center; }
